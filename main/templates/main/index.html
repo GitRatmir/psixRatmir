@@ -128,39 +128,77 @@
 	</div>
 
 	<!-- Courses -->
+    <div class="courses">
+		<div class="courses_background"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h2 class="section_title text-center">О нас</h2>
+				</div>
+			</div>
+			<div class="row courses_row">
+            <div>
+                <p>Мы - детская языковая школа, основанная в 2020 году в столице Беларуси. Молодая и амбициозная команда лингвистов ставит своей целью образовать фундамент будущего полилингвизма у людей как общественной нормы. Иными словами, преобразовать восприятия обучения иностранным языкам.
+                    Это невыполнимо без новаторства подходов. Поэтому наша команда ведёт непрерывные научные исследования в области лингвистики, педагогики, психологии и социологии на базе нашей школы и сотрудничает с исследовательскими центрами университетов не только Беларуси, но и всего мира!
+                    Сегодня существует множество различных языковых онлайн-школ со своими методиками, подходами и взглядами, которые нельзя не назвать передовыми в этой области. И они наши друзья! Наши цели не достижимы без сотрудничества с ведущими преподавательскими организациями нашего времени. Таким образом, у нас есть возможность принять их многолетний опыт, а у них - участвовать в наших проектах, мероприятиях и процессе обучения. Мы синтезируем лучшее знание в нашей сфере, которое поможет изменить структуру преподавания иностранных языков к лучшему!</p>
+            </div>
 
+
+			</div>
+		</div>
+	</div>
 	<div class="courses">
 		<div class="courses_background"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<h2 class="section_title text-center">Популярные курсы</h2>
+					<h2 class="section_title text-center">Как мы учим</h2>
 				</div>
 			</div>
 			<div class="row courses_row">
-            {% for item in courses %}
                 <div class="col-lg-4 course_col">
 					<div class="course">
-						<div class="course_image"><img src="{{ item.photo.url }}" alt="" width="358" height="158"></div>
+						<div class="course_image"><img src="{% static 'images/course_11.jpg' %}" alt="" width="358" height="158"></div>
 						<div class="course_body">
-							<div class="course_title"><a href="course.html">{{ item.title }}</a></div>
+							<div class="course_title"><a href="course.html">Семинары и лекции</a></div>
 							<div class="course_info">
-								<ul>
-									<li><a href="instructors.html">{{ item.instructor.name }}</a></li>
-									<li><a href="#">{{ item.language }}</a></li>
-								</ul>
 							</div>
 							<div class="course_text">
-								<p>{{ item.content }}</p>
+								<p>Сегодня существует множество языковых онлайн-школ. Конкуренция? Не с нашими целями! Мы сотрудничаем с такими организациями, как Skyeng и Lingoda, делимся опытом в преподавании иностранных языков и проводим совместные мероприятия в формате лекции или семинара, которые уж точно будут интересны не только детям, но и взрослым, и даже специалистам в нашей области. ". (описание).
+                                "Мероприятия проводятся раз в две недели на нашей базе или на базах наших друзей. Следите на нашими новостями!</p>
 							</div>
-						</div>
-						<div class="course_footer d-flex flex-row align-items-center justify-content-start">
-							<div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
-							<div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>{{ item.estimation }}</span></div>
 						</div>
 					</div>
 				</div>
-            {% endfor %}
+
+                            <div class="col-lg-4 course_col">
+					<div class="course">
+						<div class="course_image"><img src="{% static 'images/course_12.jpg' %}" alt="" width="358" height="158"></div>
+						<div class="course_body">
+							<div class="course_title"><a href="course.html">Приключения - через языки</a></div>
+
+							<div class="course_text">
+								<p>Мы выводим понимание дидактических методов на современный уровень. Дважды в неделю наша команда проводит стримы на нашем youtube-канале по популярным (и не очень, но не менее занимательным) компьютерным играм на изучаемых нами языках с целью показать, что изучать языки - это не только упражнения и тесты. Это может быть весело и интересно!
+                                Смотрите, участвуйте, изучайте языки с удовольствием!
+                                Подробнее - в видео-анонсе на нашем youtube-канале</p>
+							</div>
+						</div>
+					</div>
+				</div>
+                            <div class="col-lg-4 course_col">
+					<div class="course">
+						<div class="course_image"><img src="{% static 'images/course_4.jpg' %}" alt="" width="358" height="158"></div>
+						<div class="course_body">
+							<div class="course_title"><a href="course.html">Лучшие преподаватели</a></div>
+							<div class="course_info">
+
+							</div>
+							<div class="course_text">
+								<p>Мы привлекаем преподавателей, у которых горят глаза. Тех, кто готов не только учить, но и много учиться. Мы не идем на компромиссы с качеством и не работаем по шаблону. Мы создаем собственные образовательные продукты, пишем учебники, придумываем проекты, развиваем и обучаем свою команду. Мы формируем среду, которая позволяет раскрыть потенциал как преподавателей, так и учеников. Мы активно взаимодействуем с международным профессиональным сообществом, постоянно учимся сами и охотно делимся знаниями.</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
 
 			</div>
@@ -174,7 +212,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<h2 class="section_title text-center">The Best Tutors in Town</h2>
+					<h2 class="section_title text-center">Лучшие учителя</h2>
 				</div>
 			</div>
 			<div class="row instructors_row">
@@ -204,10 +242,10 @@
 				<div class="col-lg-4 instructor_col">
 					<div class="instructor text-center">
 						<div class="instructor_image_container">
-							<div class="instructor_image"><img src="images/instructor_2.jpg" alt=""></div>
+							<div class="instructor_image"><img src="{% static 'images/instructor_2.jpg' %}" alt=""></div>
 						</div>
-						<div class="instructor_name"><a href="instructors.html">Sarah Parker</a></div>
-						<div class="instructor_title">Teacher</div>
+						<div class="instructor_name"><a href="#">Sarah Parker</a></div>
+						<div class="instructor_title">Преподаватель</div>
 						<div class="instructor_text">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor.</p>
 						</div>
@@ -289,10 +327,10 @@
 						</div>
 						<div class="timer_container">
 							<ul class="timer_list">
-								<li><div id="day" class="timer_num">00</div><div class="timer_ss">days</div></li>
-								<li><div id="hour" class="timer_num">00</div><div class="timer_ss">hours</div></li>
-								<li><div id="minute" class="timer_num">00</div><div class="timer_ss">minutes</div></li>
-								<li><div id="second" class="timer_num">00</div><div class="timer_ss">seconds</div></li>
+								<li><div id="day" class="timer_num">00</div><div class="timer_ss">Дни</div></li>
+								<li><div id="hour" class="timer_num">00</div><div class="timer_ss">Часы</div></li>
+								<li><div id="minute" class="timer_num">00</div><div class="timer_ss">Минуты</div></li>
+								<li><div id="second" class="timer_num">00</div><div class="timer_ss">Секунды</div></li>
 							</ul>
 						</div>
 					</div>
@@ -303,63 +341,7 @@
 
 	<!-- Events -->
 
-	<div class="events">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<h2 class="section_title text-center">Upcoming Events</h2>
-				</div>
-			</div>
-			<div class="row events_row">
-				
-				<!-- Event -->
-				<div class="col-lg-4 event_col">
-					<div class="event">
-						<div class="event_image"><img src="images/event_1.jpg" alt=""></div>
-						<div class="event_date d-flex flex-column align-items-center justify-content-center">
-							<div class="event_day">26</div>
-							<div class="event_month">aug</div>
-						</div>
-						<div class="event_body d-flex flex-row align-items-center justify-content-start">
-							<div class="event_title"><a href="#">Networking Day</a></div>
-							<div class="event_tag ml-auto">Free</div>
-						</div>
-					</div>
-				</div>
 
-				<!-- Event -->
-				<div class="col-lg-4 event_col">
-					<div class="event">
-						<div class="event_image"><img src="images/event_2.jpg" alt=""></div>
-						<div class="event_date d-flex flex-column align-items-center justify-content-center">
-							<div class="event_day">26</div>
-							<div class="event_month">aug</div>
-						</div>
-						<div class="event_body d-flex flex-row align-items-center justify-content-start">
-							<div class="event_title"><a href="#">Networking Day</a></div>
-							<div class="event_tag ml-auto">Free</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Event -->
-				<div class="col-lg-4 event_col">
-					<div class="event">
-						<div class="event_image"><img src="images/event_3.jpg" alt=""></div>
-						<div class="event_date d-flex flex-column align-items-center justify-content-center">
-							<div class="event_day">26</div>
-							<div class="event_month">aug</div>
-						</div>
-						<div class="event_body d-flex flex-row align-items-center justify-content-start">
-							<div class="event_title"><a href="#">Networking Day</a></div>
-							<div class="event_tag ml-auto">Free</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
 {% endblock %}
 </div>
 
